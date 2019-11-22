@@ -3,10 +3,10 @@
 This repository builds a [JupyterHub](https://jupyter.org/hub) environment with [Repo2Docker](https://repo2docker.readthedocs.io/en/latest/) and [GitHub Actions CI](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) 
 
 ![Action Status](https://github.com/uw-cryo/uwgda2020/workflows/Repo2Docker/badge.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/uw-cryo/repo2docker-githubci)
+![Docker Pulls](https://img.shields.io/docker/pulls/uwcryo/uwgda2020)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uw-cryo/uwgda2020/master?urlpath=lab)
 
-https://hub.docker.com/u/uwcryo
+https://hub.docker.com/r/uwcryo/uwgda2020/tags
 
 ### How to use
 
