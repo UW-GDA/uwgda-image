@@ -11,7 +11,7 @@ dependencies:
   - fiona=1.8
   - fsspec=0.6
   - gcsfs=0.4
-  - gdal=2.4
+  - gdal=3.0
   - geojson=2.5
   - geopandas=0.6
   - geoviews=1.6
