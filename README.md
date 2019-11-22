@@ -10,15 +10,19 @@ https://hub.docker.com/u/uwcryo
 
 ### How to use
 
-1) build with GitHub Actions by pushing to GitHub
-* commits to master branch trigger re-building image tagged by github short sha and 'latest'
+build with GitHub Actions simply by pushing to GitHub
+
+* pull requests trigger image building without pushing to DockerHub
+
+* commits to master branch (except readme.md changes) trigger re-building image 
+* successfully built image is tagged by github commit short sha and 'latest'
 ```
 git commit -a -m "modified binder/environment to my liking"
 git push
 ```
 * pushing a tag results in a docker image with the same tag:
 ```
-git tag -am "tagging 2.3.2" 2.3.2
+git tag -am "tag version 2.3.2" 2.3.2
 git push --tags
 ```
 
@@ -31,3 +35,8 @@ docker run -it --name repo2docker -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.
 docker stop repo2docker
 docker rm repo2docker
 ```
+
+### Point to a specific tagged image in JupyterHub config
+(image: uwcryo/uwgda:0.1)
+https://zero-to-jupyterhub.readthedocs.io/en/latest/reference/reference.html?highlight=profile_list#singleuser-profilelist
+
