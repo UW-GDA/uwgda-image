@@ -19,7 +19,7 @@ on:
 
 
 env:
-  CONTAINER_NAME: uwcryo/uwgda2020 # user/repo format
+  CONTAINER_NAME: UW-GDA/uwgda-image # user/repo format
   GITHUB_SHA: ${{ github.sha }}
   GITHUB_REF: ${{ github.ref }}
 

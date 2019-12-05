@@ -2,11 +2,10 @@
 
 This repository builds a [JupyterHub](https://jupyter.org/hub) environment with [Repo2Docker](https://repo2docker.readthedocs.io/en/latest/) and [GitHub Actions CI](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) 
 
-[![Action Status](https://github.com/uw-cryo/uwgda2020/workflows/Repo2Docker/badge.svg)](https://github.com/uw-cryo/uwgda2020/actions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/uwcryo/uwgda2020)](https://hub.docker.com/r/uwcryo/uwgda2020/tags)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uw-cryo/uwgda2020/master?urlpath=lab)
+[![Action Status](https://github.com/UW-GDA/uwgda-image/workflows/Repo2Docker/badge.svg)](https://github.com/UW-GDA/uwgda-image/actions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/UW-GDA/uwgda-image)](https://hub.docker.com/r/UW-GDA/uwgda-image/tags)
 
-https://hub.docker.com/r/uwcryo/uwgda2020/tags
+https://hub.docker.com/r/UW-GDA/uwgda-image/tags
 
 ### How to use
 
@@ -22,21 +21,21 @@ git push
 ```
 * pushing a tag results in a docker image with the same tag:
 ```
-git tag -am "tag version 2.3.2" 2.3.2
+git tag -am "tag version 2019.1" 2019.1 
 git push --tags
 ```
 
 ### Pull your image to run a local JupyterLab session
 ```
-export IMAGE=uwcryo/uwgda2020
+export IMAGE=UW-GDA/uwgda-image
 export TAG=latest
-docker pull docker.pkg.github.com/$IMAGE:$TAG
-docker run -it --name repo2docker -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.0.0
-docker stop repo2docker
-docker rm repo2docker
+docker pull 
+docker run -it --name UW-GDA -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.0.0
+docker stop UW-GDA
+docker rm UW-GDA
 ```
 
 ### Point to a specific tagged image in JupyterHub config
-(image: uwcryo/uwgda:0.1)
+(image: UW-GDA/uwgda-image:2019.1)
 https://zero-to-jupyterhub.readthedocs.io/en/latest/reference/reference.html?highlight=profile_list#singleuser-profilelist
 
