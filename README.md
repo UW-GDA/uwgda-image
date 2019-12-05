@@ -21,21 +21,21 @@ git push
 ```
 * pushing a tag results in a docker image with the same tag:
 ```
-git tag -am "tag version 2019.1" 2019.1 
+git tag -am "tag version 2020.1" 2020.1 
 git push --tags
 ```
 
 ### Pull your image to run a local JupyterLab session
 ```
 export IMAGE=uwgda/uwgda-image
-export TAG=latest
-docker pull 
+export TAG=2020.1
+docker pull $IMAGE:$TAG
 docker run -it --name UWGDA -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.0.0
 docker stop UWGDA
 docker rm UWGDA
 ```
 
 ### Point to a specific tagged image in JupyterHub config
-(image: uwgda/uwgda-image:2019.1)
+(image: uwgda/uwgda-image:2020.1)
 https://zero-to-jupyterhub.readthedocs.io/en/latest/reference/reference.html?highlight=profile_list#singleuser-profilelist
 
