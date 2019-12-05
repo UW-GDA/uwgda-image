@@ -9,12 +9,14 @@ on:
       - '*'
     paths:
       - binder/*
+      - .github/workflows/*
       - requirements.txt
   pull_request:
     branches:
       - master
     paths:
       - binder/*
+      - .github/workflows/*
       - requirements.txt
 
 
