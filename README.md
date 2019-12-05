@@ -3,9 +3,9 @@
 This repository builds a [JupyterHub](https://jupyter.org/hub) environment with [Repo2Docker](https://repo2docker.readthedocs.io/en/latest/) and [GitHub Actions CI](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) 
 
 [![Action Status](https://github.com/UW-GDA/uwgda-image/workflows/Repo2Docker/badge.svg)](https://github.com/UW-GDA/uwgda-image/actions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/UW-GDA/uwgda-image)](https://hub.docker.com/r/UW-GDA/uwgda-image/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/uwgda/uwgda-image)](https://hub.docker.com/r/uwgda/uwgda-image/tags)
 
-https://hub.docker.com/r/UW-GDA/uwgda-image/tags
+https://hub.docker.com/r/uwgda/uwgda-image/tags
 
 ### How to use
 
@@ -27,15 +27,15 @@ git push --tags
 
 ### Pull your image to run a local JupyterLab session
 ```
-export IMAGE=UW-GDA/uwgda-image
+export IMAGE=uwgda/uwgda-image
 export TAG=latest
 docker pull 
-docker run -it --name UW-GDA -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.0.0
-docker stop UW-GDA
-docker rm UW-GDA
+docker run -it --name UWGDA -p 8888:8888 $IMAGE:$TAG jupyter lab --ip 0.0.0.0
+docker stop UWGDA
+docker rm UWGDA
 ```
 
 ### Point to a specific tagged image in JupyterHub config
-(image: UW-GDA/uwgda-image:2019.1)
+(image: uwgda/uwgda-image:2019.1)
 https://zero-to-jupyterhub.readthedocs.io/en/latest/reference/reference.html?highlight=profile_list#singleuser-profilelist
 

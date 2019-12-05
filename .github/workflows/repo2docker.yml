@@ -21,7 +21,7 @@ on:
 
 
 env:
-  CONTAINER_NAME: UW-GDA/uwgda-image # user/repo format
+  CONTAINER_NAME: uwgda/uwgda-image # user/repo format
   GITHUB_SHA: ${{ github.sha }}
   GITHUB_REF: ${{ github.ref }}
 
