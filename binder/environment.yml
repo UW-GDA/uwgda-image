@@ -7,6 +7,7 @@ dependencies:
   - dask=2.8
   - dask-labextension=1.0
   - datashader=0.8
+  - descartes=1.1
   - distributed=2.8
   - fiona=1.8
   - fsspec=0.6
