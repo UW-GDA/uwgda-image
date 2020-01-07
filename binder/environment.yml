@@ -30,6 +30,7 @@ dependencies:
   - numpy=1.17
   - pandas=0.25
   - panel=0.7
+  - parallel
   - pillow=6.2
   - pip=19.3
   - pyproj=2.4
