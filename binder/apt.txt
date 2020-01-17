@@ -2,3 +2,4 @@ vim
 emacs
 nano
 wget
+man
