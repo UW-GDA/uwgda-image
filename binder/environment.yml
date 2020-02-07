@@ -26,6 +26,7 @@ dependencies:
   - ipywidgets=7.5
   - jupyterlab=1.2
   - matplotlib=3.1
+  - matplotlib-scalebar=0.6
   - nbgitpuller=0.7
   - numpy=1.17
   - pandas=0.25
